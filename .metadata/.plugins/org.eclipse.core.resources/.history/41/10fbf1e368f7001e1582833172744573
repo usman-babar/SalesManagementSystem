@@ -1,0 +1,66 @@
+package sms;
+
+public class SalesRecord {
+	private int serialNumber;
+	private String date;
+	private int quarter;
+	private String region;
+	private double amount;
+
+	// Constructor
+	public SalesRecord(int serialNumber, String date, int quarter, String region, double amount) {
+		this.serialNumber = serialNumber;
+		this.date = date;
+		this.quarter = quarter;
+		this.region = region;
+		this.amount = amount;
+	}
+
+	// Getters and Setters
+	public int getSerialNumber() {
+		return serialNumber;
+	}
+
+	public void setSerialNumber(int serialNumber) {
+		this.serialNumber = serialNumber;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public int getQuarter() {
+		return quarter;
+	}
+
+	public void setQuarter(int quarter) {
+		this.quarter = quarter;
+	}
+
+	public String getRegion() {
+		return region;
+	}
+
+	public void setRegion(String region) {
+		this.region = region;
+	}
+
+	public double getAmount() {
+		return amount;
+	}
+
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+
+	@Override
+	public String toString() {
+		return "SalesRecord [serialNumber=" + serialNumber + ", date=" + date + ", quarter=" + quarter + ", region="
+				+ region + ", amount=" + amount + "]";
+	}
+
+}
